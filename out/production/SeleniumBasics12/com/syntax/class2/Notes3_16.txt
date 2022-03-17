@@ -1,0 +1,37 @@
+SELENIUM CLASS 02
+
+What is a WebElement?
+-ANYTHING we see on the webpage is considered to be a WebElement
+examples: buttons, links, checkboxes, text boxes, etc.
+
+What is HTML?
+-HyperText Markup Language
+
+What is DOM?
+-DOM stands for Document Object Model
+-It is the browser's internal view of the webpage
+-AKA "Developer's tools", AKA "Dev tools"
+-Document --> can be stored like any document such as pdf, excel, etc.
+-Object --> any line in HTML is considered an Object
+-Model --> This is just a layout of the HTML
+
+Locator:
+-Is an address or a position of a web element on the webpage
+-Is used to locate or identify the web elements on the webpage
+
+8 Locators:
+- ID
+- Name
+- TagName
+- Xpath
+- LinkText
+- PartialLinkText
+- CSS Selector
+- Classname
+
+HTML Scripting Meaning:
+-purple/light blue(in dark mode) = tags (button, input, div)
+-brown/pastel blue(in dark mode) = attributes (name, class, id)
+-blue/orange(in dark mode) = attributes value (any value the developers put in there)
+- /teal(in dark mode) =
+
