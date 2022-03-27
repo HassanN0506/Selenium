@@ -1,0 +1,70 @@
+Selenium class 3
+
+prioritize: id, then name, then xpath!!!!!
+
+Why do we need Xpath and Css Selector?
+-developers will NOT provide all the locators
+-by using Xpath and Css we can identify elements with any given attributes
+
+What is an Xpath?
+-Xpath is like a query language which helps us to identify elements uniquely on the webpage
+
+Types of Xpath:
+Absolute Xpath -> Always starts from the starting node in html (the html tag)
+                  Always starts with single slash "/"
+                  example: html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[2]/div[2]/input
+
+Relative Xpath -> Starts from any nde in the html
+                  It always starts with double slash "//"
+
+Syntax for Relative Xpath:
+//tagname[@attribute = 'attribute value']
+Example: //input[@id = 'email']
+
+Identifying elements by its text:
+//tagname[text() = 'text value']
+Example: //a[text()='Create new account']
+
+Identifying elements by using contains method:
+//tagname[contains(@attribute, 'partial attribute value')]
+Example: //input[contains(@placeholder, 'Email')]
+
+Identifying elements with partial starting value:
+//tagname[starts-with(@attribute, 'partial starting attribute value')]
+Example: //button[starts-with(@data-testid, 'royal')]
+
+-NO ends-with method, only starts-with and contains
+
+<div> -- division
+<img> -- image
+<h> -- header
+<p> -- paragraph
+<li> -- list
+<ul> -- unordered list
+<ol> -- ordered list
+<br> -- breaking line
+
+Advanced Xpath:
+Is based on parent and child and sibling relationships
+
+identifying elements by following siblings:
+//tagname[@attributes = 'attribute value']/following-sibling::tagname
+Example: //input[@id='calFromDate']/following-sibling::img
+
+identifying elements by preceding siblings:
+//tagname[@attributes = 'attribute value']/preceding-sibling::tagname
+//input[@id='calFromDate']/preceding-sibling::label
+
+Identifying elements by parents:
+//tagname[@attributes = 'attribute value']/parent::parentTagName
+Example: //span[text() = '& Orders']/parent::a
+
+identifying an element by its ancestor:
+//tagname[@attributes = 'attribute value']/ancestor::ancestorTagName
+Example: //input[@id='email']/ancestor::form
+
+identifying element by index:
+-only if there is more than 1 instance of that Xpath
+-not preferred
+Syntax: ( Xpath )[instance number]
+Example:(//img[@class='ui-datepicker-trigger'])[2]

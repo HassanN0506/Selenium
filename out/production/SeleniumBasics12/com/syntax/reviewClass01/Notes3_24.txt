@@ -1,0 +1,6 @@
+Relative xpath:
+    //input[@id='userName']
+    hey dom, bring us the tag "input" --> //input
+    who has an attribute id           --> [@id]
+    and its value is userName         --> [@id='userName']
+

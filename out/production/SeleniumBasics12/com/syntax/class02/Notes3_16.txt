@@ -35,3 +35,17 @@ HTML Scripting Meaning:
 -blue/orange(in dark mode) = attributes value (any value the developers put in there)
 - /teal(in dark mode) =
 
+
+So, why do we need so many locators:
+-Developers may not provide all the locators for all the elements, so it's good to have options.
+-Some locators may have duplicate values in different nodes, so it's good to have options to
+be able to locate the most specific value.
+-Some locators may not be applicable for the elements we are looking for
+    ex: linkTest and partialLikText are only used for links.
+
+
+IF 2 OR MORE ELEMENTS HAVE THE SAME ATTRIBUTE VALUES, SELENIUM WILL AUTOMATICALLY RUN WITH THE 1ST ONE
+
+
+AN "a tag" IS ALSO CALLED AN "anchor tag"
+

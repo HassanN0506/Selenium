@@ -1,0 +1,41 @@
+
+//* in place of //tagname means hey dom, bring me EVERY attribute with the following!!!!!
+
+Relative xpath:
+    //input[@id='userName']
+    hey dom, bring us the tag "input" --> //input
+    who has an attribute id           --> [@id]
+    and its value is userName         --> [@id='userName']
+
+We can use starts-with in the xpath
+-use startsWith if an element has a number in it,
+but the number is at the end of the attribute's value!!!!!
+syntax: //tagname[starts-with(@attribute, 'starting of the attribute value')]
+example: //input[starts-with(@id, 'user')]
+
+Contains:
+syntax: //tagname[contains(@attribute, 'some portion of the attribute value')]
+Example: //input[contains(@id, 'erNa')]
+
+by Text:
+//tagname[text()='abcd']
+//button[text()='Submit']
+
+
+CSS selector:
+-it does not have any slashes
+-it does not have any @
+syntax: tagname[attribute='attribute value']
+
+
+shortcuts:
+id = #
+example:
+    <input @id="pitbull"/>
+    input#pitbull   (no quote marks)
+
+class = .
+example:
+    <input @id="pitbull" @class="bigdogs"/>
+    input.bigdogs   (no quote marks)
+
