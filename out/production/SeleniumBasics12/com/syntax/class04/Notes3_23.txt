@@ -26,7 +26,7 @@ Contains() method in CSS:
     example: input[placeholder *= 'Email']
 
 Starts-with method in CSS:
-^ (circumflex) symbol represents starts-with method
+^ (caret) symbol represents starts-with method
     syntax: tagname[attribute ^= 'STARTING part of the attribute value']
     example: input[type ^= 'pass']
 

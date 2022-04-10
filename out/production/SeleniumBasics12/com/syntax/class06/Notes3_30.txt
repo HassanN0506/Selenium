@@ -1,0 +1,48 @@
+Selenium Class 06
+
+Alerts:
+Alert is a pop-up message. Alert takes the complete focus of the main page that
+we are working on, and we cannot proceed until it is handled.
+
+3 types of Alerts:
+1. Web-based alerts/ html alerts
+        -we can simply inspect and preform needed actions
+2. Javascript alerts/ browser alerts
+        -we can handle these alerts by using switchTo method
+        -we canNOT inspect these alerts
+3. Windows based alerts
+        -we canNOT handle with selenium
+
+Types of JS alerts:
+1. Simple alert - we can only click on 'ok' button
+2. Confirmation alert - either click 'cancel' or click 'ok'
+3. Prompt alert - enter the text and then click 'ok', or simply click 'cancel'
+
+4 methods to handle JS alerts:
+1. accept() - click ok
+2. dismiss() - click cancel
+3. getText()
+4. sendKeys()
+
+To handle "Authentication alerts", we need to pass the username and password in the url
+Syntax: https:// username:password@ restOfTheURL
+Example: https://admin:admin@the-internet.herokuapp.com/basic_auth
+
+
+Frames:
+-Frame is a separate, independent window in our webpage.
+-Frames allow developers to represent multiple views on 1 page.
+
+3 ways to interact with frames:
+1. by index
+2. by name or ID
+3. by WebElement
+
+In alerts, we switch to alert, and then it switches back automatically.
+But in frames, we switch to a frame manually, and switch manually BACK to the main page.
+
+
+INTERVIEW QUESTION:
+"How do you handle alerts in selenium?"
+-We handle Alerts by using Alert interface.
+

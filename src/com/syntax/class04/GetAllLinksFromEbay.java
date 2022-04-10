@@ -1,6 +1,5 @@
 package com.syntax.class04;
 
-import com.sun.deploy.util.JVMParameters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +15,7 @@ public class GetAllLinksFromEbay {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.ebay.com/");
         List<WebElement> allLinks = driver.findElements(By.tagName("a"));
+        //this is an arraylist by default, i think.
         System.out.println("Number of links: " + allLinks.size());
 
         for (WebElement link : allLinks){

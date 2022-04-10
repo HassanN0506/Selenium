@@ -1,0 +1,33 @@
+selenium review 02
+
+YOU CAN USE 'AND' AND 'OR' INSIDE XPATHS AND CSS
+TO SPECIFY 2 OR MORE ATTRIBUTES
+
+'isEnabled()' checks if you can click on it or not
+
+
+advanced xpath:
+get to the nearest sibling, parent, or ancestor first
+and then have access to the desired tag
+
+//label[@name="myid"]/following-sibling::input
+-hey get me the tag with name "label", whose
+attribute has the value of "myid".
+
+//label[@name="myid"]/following-sibling::input
+-once you are there, get me it's following singling,
+who has a tag called "input"
+
+following-sibling is sibling tag that comes after
+preceding-sibling is the sibling tag that comes before
+
+----------------------------------------------------------------------------------------
+
+driver.findElement(By.xpath/css/name/is/tag/etc.(" "));
+
+
+-Whenever we have dropdowns that are made using select class,
+we can use select class in selenium to deal with them.
+1. get to the select tag for the drop-down using driver.findElement
+2. create an instance of select class and pass your WebElement
+3. we can select any option by value/by visible text/by index

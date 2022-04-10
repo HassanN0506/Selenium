@@ -1,0 +1,31 @@
+Selenium Class 5
+
+you can store urls as Strings, outside the class, and make them public static for easy access
+
+Handling checkboxes and radiobutton:
+-if you have only 1 checkbox or radio button, you can just click on it.
+-if you have multiple choices: store them in List and loop through.
+
+-not good to locate an element on a list by index, because if something is added all the index change
+
+
+DropDowns
+-dropdown is a menu which gives us an opportunity to select one or more options
+
+Types of dropdowns:
+-Single select
+-Multiple select
+
+Handling dropdowns:
+1. click on dropdown, and then click on the option you want
+2. using Select class
+    -in order to use Select class, we need to make sure the dropdown has a Select tag
+
+Selecting an option from a dropdown can be done in 3 ways:
+1. by index
+2. by visible text
+3. by value
+
+Whenever you interact with multiple elements, you store them inside a container
+such as list, set, map, etc.
+
