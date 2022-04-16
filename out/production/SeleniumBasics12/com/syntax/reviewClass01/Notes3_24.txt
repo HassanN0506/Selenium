@@ -1,6 +1,7 @@
 selenium review 01
 
-//* in place of //tagname means hey dom, bring me EVERY attribute with the following!!!!!
+//* in place of //tagname means hey dom, bring me EVERY attribute with the following    !!!!!
+
 
 Relative xpath:
     //input[@id='userName']
@@ -9,8 +10,7 @@ Relative xpath:
     and its value is userName         --> [@id='userName']
 
 We can use starts-with in the xpath
--use startsWith if an element has a number in it,
-but the number is at the end of the attribute's value!!!!!
+-use startsWith if an element has a number in it, but the number is at the end of the attribute's value!!!!!
 syntax: //tagname[starts-with(@attribute, 'starting of the attribute value')]
 example: //input[starts-with(@id, 'user')]
 
@@ -33,10 +33,10 @@ shortcuts:
 id = #
 example:
     <input @id="pitbull"/>
-    input#pitbull   (no quote marks)
+    input#pitbull   (no quote marks)!!!!!
 
 class = .
 example:
     <input @id="pitbull" @class="bigdogs"/>
-    input.bigdogs   (no quote marks)
+    input.bigdogs   (no quote marks)!!!!!
 

@@ -9,7 +9,7 @@ When to go for automation:
 -After manual testing is passed
 (We ALWAYS START with a few MANUAL Tests, to ensure the application is stable)
 -When environment is stable
--Analyze out test suite and choose out automation tools
+-Analyze our test suite and choose our automation tools
 
 What automation tools do we know about?
 -Selenium, TestNG, Cucumber, Katalon Studio, UFT/QTP

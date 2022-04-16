@@ -15,7 +15,7 @@ public class HandleFrames {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(url);
-        driver.switchTo().frame(0);
+        driver.switchTo().frame(0);                                //specifying frame by index
         WebElement textBox = driver.findElement(By.id("name"));
         textBox.sendKeys("Batch 12 Forever!!!");
 
@@ -29,7 +29,12 @@ public class HandleFrames {
         Thread.sleep(1000);
         alert.accept();
 
-        driver.switchTo().frame("iframe_a");
+        /*
+        In alerts, we switch to alert, and then it switches back automatically.
+        But in frames, we switch to a frame manually, and we MUST switch manually BACK to the main page.
+        */
+
+        driver.switchTo().frame("iframe_a");            //specifying frame by name (id works the same)
         textBox.clear();
         textBox.sendKeys("Yeahhhhhhh");
 
@@ -37,7 +42,7 @@ public class HandleFrames {
 
         //creating a WebElement of the frame so that we can pass it in the next line
         WebElement frameElement = driver.findElement(By.xpath("//iframe[@src='/Demo.html']"));
-        driver.switchTo().frame(frameElement);
+        driver.switchTo().frame(frameElement);                      //specifying frame by WebElement
         textBox.clear();
         textBox.sendKeys("Hold your horses");
     }

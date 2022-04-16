@@ -3,6 +3,7 @@ Selenium class 4
 Whenever you see a NUMERIC character in the value of an attribute, it will
 MOST LIKELY be changed in the near future, and so it is NOT RELIABLE!!!!!!!!!!!
 
+
 CSS Selector (Cascading Style Sheet)
 -it is another way of locating elements on the webpage
 -syntax: tagName[attribute = 'attribute value']
@@ -39,9 +40,9 @@ $ symbol represents ends-with method in CSS
 Xpath vs CSS:
 -xpath doesn't have ends-with method, and css does
 -css has shortcuts
--css is FASTER than xpath
+-css is FASTER than xpath   !!!!!
 -css doesn't use //
--css CANNOT locate an element by its text, and xpath can
+-css CANNOT locate an element by its text, and xpath can    !!!!!
 -there is no advanced css (there IS advanced xpath)
 -css have a more simple syntax than xpath
 
@@ -53,7 +54,9 @@ and get the element state on the webpage.
 isEnabled() --  boolean value
 isDisplayed() -- boolean value
 isSelected() -- boolean value
-clear() -- void
 getText() -- String value
 getAttribute() -- String value
+clear() -- void
 submit() -- void
+    -if the .submit() method causes the page to change, then it will wait until the page is loaded before continuing
+    -but .click() will not wait until the new page is loaded!!!!!

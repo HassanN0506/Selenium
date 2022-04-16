@@ -4,34 +4,44 @@ Alerts:
 Alert is a pop-up message. Alert takes the complete focus of the main page that
 we are working on, and we cannot proceed until it is handled.
 
+-Whenever we deal with alerts, we use the Alert interface
+
 3 types of Alerts:
 1. Web-based alerts/ html alerts
-        -we can simply inspect and preform needed actions
+        -we can simply inspect and preform needed actions like any other WebElement
 2. Javascript alerts/ browser alerts
-        -we can handle these alerts by using switchTo method
-        -we canNOT inspect these alerts
+        -we can handle these alerts by using the .switchTo() method
+        -we can NOT inspect these alerts
 3. Windows based alerts
-        -we canNOT handle with selenium
+        -we can NOT handle with selenium
+
 
 Types of JS alerts:
-1. Simple alert - we can only click on 'ok' button
-2. Confirmation alert - either click 'cancel' or click 'ok'
-3. Prompt alert - enter the text and then click 'ok', or simply click 'cancel'
+1. Simple alert
+    -we can only click on 'ok' button
+2. Confirmation alert
+    -either click 'cancel' or click 'ok'
+3. Prompt alert
+    -enter the text and then click 'ok',
+    or simply click 'cancel' (if that's an option)
+
 
 4 methods to handle JS alerts:
-1. accept() - click ok
-2. dismiss() - click cancel
+1. accept()  - click ok
+2. dismiss()  - click cancel (if the only button is 'ok' it will click on that one)
 3. getText()
 4. sendKeys()
 
-To handle "Authentication alerts", we need to pass the username and password in the url
+(Authentication Alerts are technically JS alerts, but we can't sendKeys() to it.)
+To handle "Authentication alerts", we need to pass the username and password in the url.
 Syntax: https:// username:password@ restOfTheURL
 Example: https://admin:admin@the-internet.herokuapp.com/basic_auth
 
+------------------------------------------------------------
 
 Frames:
 -Frame is a separate, independent window in our webpage.
--Frames allow developers to represent multiple views on 1 page.
+-Frames allow developers to represent multiple views on 1 webpage.
 
 3 ways to interact with frames:
 1. by index
@@ -39,7 +49,7 @@ Frames:
 3. by WebElement
 
 In alerts, we switch to alert, and then it switches back automatically.
-But in frames, we switch to a frame manually, and switch manually BACK to the main page.
+But in frames, we switch to a frame manually, and switch manually BACK to the main page (w/ " .defaultContent() ").
 
 
 INTERVIEW QUESTION:

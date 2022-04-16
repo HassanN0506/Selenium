@@ -1,6 +1,10 @@
 Selenium Class 5
 
-you can store urls as Strings, outside the class, and make them public static for easy access
+-you can store urls as Strings, outside the class, and make them public static for easy access
+
+-findElement() will return an ERROR if noSuchElement
+-but findElementS() will just return an EMPTY LIST if noSuchElement!!!!!
+
 
 Handling checkboxes and radiobutton:
 -if you have only 1 checkbox or radio button, you can just click on it.
@@ -20,6 +24,7 @@ Handling dropdowns:
 1. click on dropdown, and then click on the option you want
 2. using Select class
     -in order to use Select class, we need to make sure the dropdown has a Select tag
+        - .isMultiple() method returns boolean and is used to verify if WebElement object allows multiple selection
 
 Selecting an option from a dropdown can be done in 3 ways:
 1. by index
@@ -28,4 +33,13 @@ Selecting an option from a dropdown can be done in 3 ways:
 
 Whenever you interact with multiple elements, you store them inside a container
 such as list, set, map, etc.
+    - .getOptions() method returns a List of WebElements of all options belonging to the Select tag
+    - syntax: " List<WebElements> listName = selectObjectName.getOptions(); "
 
+
+De-Selecting methods (ONLY WORKS WITH MULTI-SELECT WEB ELEMENTS):
+.deselectAll()
+.deselectByIndex(int index)
+.deselectByValue(String value)
+.deselectByVisibleText(String visibleText)
+.isMultiple() - Tells whether the SELECT element supports multiple selecting options at the same time or not.

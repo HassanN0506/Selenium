@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class AuthenticationAlert {
 
     public static String url = "https://admin:admin@the-internet.herokuapp.com/basic_auth";
-    //When there is a username and password authentication popup asap:
+    //When there is a username and password authentication popup asap, it has to be taken care of in the url
     //Syntax: https://username:password@restOfTheURL
     //Example: https://admin:admin@restOfTheURL
 

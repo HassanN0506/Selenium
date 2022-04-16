@@ -11,7 +11,7 @@ What is DOM?
 -DOM stands for Document Object Model
 -It is the browser's internal view of the webpage
 -AKA "Developer's tools", AKA "Dev tools"
--Document --> can be stored like any document such as pdf, excel, etc.
+-Document --> it can be stored like any document such as pdf, excel, etc.
 -Object --> any line in HTML is considered an Object
 -Model --> This is just a layout of the HTML
 
@@ -33,7 +33,7 @@ HTML Scripting Meaning:
 -purple/light blue(in dark mode) = tags (button, input, div)
 -brown/pastel blue(in dark mode) = attributes (name, class, id)
 -blue/orange(in dark mode) = attributes value (any value the developers put in there)
-- /teal(in dark mode) =
+-white (in dark mode) = visible text (visible to the WebDriver)
 
 
 So, why do we need so many locators:
@@ -47,5 +47,5 @@ be able to locate the most specific value.
 IF 2 OR MORE ELEMENTS HAVE THE SAME ATTRIBUTE VALUES, SELENIUM WILL AUTOMATICALLY RUN WITH THE 1ST ONE
 
 
-AN "a tag" IS ALSO CALLED AN "anchor tag"
+AN "a tag" IS ALSO CALLED AN "anchor tag" (link)
 

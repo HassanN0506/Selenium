@@ -1,6 +1,8 @@
 Selenium class 3
 
-prioritize: id, then name, then xpath!!!!!
+prioritize: id, then name, then css selector, then xpath!!!!!
+(css is faster than xpath!!!!!)
+
 
 Why do we need Xpath and Css Selector?
 -developers will NOT provide all the locators
