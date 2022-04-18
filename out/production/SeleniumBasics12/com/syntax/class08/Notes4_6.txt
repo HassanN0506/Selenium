@@ -1,0 +1,73 @@
+Selenium class 8
+
+Wildcard:
+-Starting an xPath with " //* restOfTheXpath".
+-Instead of starting the xpath with a particular tagName,
+    if we write the xpath like this (starting with //*),
+    with a star in place of a tagName,
+    it'll locate EVERY element that matches the rest of the xpath,
+    no matter what the tagName is.
+-So it's a way of making the xPath more DYNAMIC!!!!!
+-' * ' is a wildcard. It can identify ANY tagName.
+example: //*[starts-with(text(), 'Welcome')]
+    -it'll locate every WebElement that has a text that starts with 'Welcome', no matter the tagName.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Implicit wait:
+    -Will be applied for the 2 FindElement methods
+
+Explicit wait (AKA "WedDriver Wait", in Selenium):
+    -Is used to tell the WebDriver to wait for a certain condition, before throwing
+        an exception for the specified condition.
+    -Works with 'ExpectedConditions' class.
+    -Waits until the specified conditions are met, or until the given time has run out.
+
+
+Differences between implicit and explicit waits:
+    -implicit wait is applied only when finding web elements.
+    -implicit wait only waits until the element is Located (doesn't care what condition it's in)!!!!!
+
+    -explicit wait is applied only when we write the code for it.
+    -'explicit wait' waits until the specified condition of the WebElement is met!!!!!
+
+
+FLUENT wait:
+-Is a 'Global wait' like implicit wait (only write it once, and it is applied to the entire script).
+-Used to tell the WebDriver to wait for certain condition(s), as well as its FREQUENCY,
+    before throwing an exception.
+-Usually gets set after navigating to the URL (just like Implicit wait)!!!!!
+
+
+-Implicit wait -- waits to locate an element.
+-Explicit wait -- waits until a condition is met.
+-Fluent wait -- sets timeouts, sets polling frequency, and ignores specified exceptions in the given time period.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+to go from a parent tag to its child, just type the parent's xpath, and add on: "/childTagName"!!!!!
+
+WebTables:
+-WebTables are elements as well on the webpage, which are constructed by having rows and columns.
+
+Types of WebTables:
+1. Static WebTable --Data is fixed/constant
+2. Dynamic WebTable --Data changes
+
+-WebTables consist of different sections or parts.
+-Construction:
+    <table> //table
+        <thead> //table header
+            <tr> //table row
+                <th></th> //column data (header)
+            </tr>
+        </thead>
+        <tbody> //table body
+            <tr>
+                <td></td> //table data
+            </tr>
+        </tbody>
+    </table>
+    //sometimes the 'header' is written as the 1st row inside the BODY!!!!!
+

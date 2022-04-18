@@ -9,7 +9,7 @@ package com.syntax.class07;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -19,8 +19,8 @@ public class HW {
     public static String url = "https://demoqa.com/browser-windows";
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
+        WebDriver driver = new FirefoxDriver();
         driver.get(url);
 
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
